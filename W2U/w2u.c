@@ -1,5 +1,5 @@
 /**************************************************
-		W2U (Win to Unix/Linux)
+		W2U (Win/DOS to Unix/Linux)
 	Created by GTAWWEKID; NON-PROFIT USE!
 	=====================================
 	USE: w2u [Win32 CMD]
@@ -21,9 +21,12 @@ int main(int argc, char *argv[])
 	char *cmd[50][50] = {
 	{ "cls" , "clear" },
 	{ "ipconfig" , "ifconfig" },
+	{ "dir" , "ls -A -l" },
+	{ "tree" , "ls -R"},
+	//Other commands require smart extension input
 
 	//default fall
-	{ "?" , "clear"}
+	{ "?" , "?"}
 	};
 
 	//Get COMMAND AND CONVERT; THAN OUTPUT.
